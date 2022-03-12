@@ -1,0 +1,14 @@
+<%@ page contentType="text/html"%>
+<%@ page pageEncoding="utf-8"%>
+<center><H1>
+<A href="001.jsp">001</A>
+<A href="002.jsp">002</A>
+<A href="003.jsp">003</A>
+<A href="004.jsp">004</A>
+<A href="005.jsp">005</A>
+<A href="006.jsp">006</A>
+<A href="007.jsp">007</A>
+<A href="008.jsp">008</A>
+<A href="009.jsp">009</A>
+<A href="1.jsp">主页</A>
+</H1>

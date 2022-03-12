@@ -1,0 +1,3 @@
+<%@ page contentType="text/html"%>
+<%@ page pageEncoding="utf-8"%>
+<A href="1.jsp">主页</A>

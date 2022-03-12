@@ -1,0 +1,5 @@
+<%@ page contentType="text/html"%>
+<%@ page pageEncoding="utf-8"%>
+<center>
+<A href="example2_10_a.jsp">北京大学</A>
+<A href="example2_10_b.jsp">清华大学</A>

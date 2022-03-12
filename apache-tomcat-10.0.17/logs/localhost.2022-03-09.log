@@ -1,0 +1,1211 @@
+09-Mar-2022 19:52:41.677 信息 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-Mar-2022 19:52:41.677 信息 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-Mar-2022 19:52:41.677 信息 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@89c10b7')
+09-Mar-2022 19:52:51.789 严重 [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token ";", , expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body bgcolor=#ffccff>	<!--html鑳屾櫙棰滆壊-->
+4: <p style="font-family:瀹嬩綋;font-size:36;color:blue">
+5: <%! double multi(double x;double y){
+6: 	return x*y;
+7: }
+8: double div(double x;double y){
+
+
+JSP文件：[/example2_3.jsp] 的第 [8] 行发生了一个错误
+Syntax error on token ";", , expected
+5: <%! double multi(double x;double y){
+6: 	return x*y;
+7: }
+8: double div(double x;double y){
+9: 	return x/y;
+10: }
+11: class Circle{
+
+
+JSP文件：[/example2_3.jsp] 的第 [10] 行发生了一个错误
+Syntax error on token "}", delete this token
+7: }
+8: double div(double x;double y){
+9: 	return x/y;
+10: }
+11: class Circle{
+12: 	double r;
+13: 	double getArea(){
+
+
+JSP文件：[/example2_3.jsp] 的第 [16] 行发生了一个错误
+Syntax error, insert "}" to complete MethodBody
+13: 	double getArea(){
+14: 		return 3.1415926*r*r;
+15: 	}
+16: }
+17: %>
+18: <% double x=8.79;
+19: double y=20.8;
+
+
+JSP文件：[/example2_3.jsp] 的第 [21] 行发生了一个错误
+The method multi() in the type example2_005f3_jsp is not applicable for the arguments (double, double)
+18: <% double x=8.79;
+19: double y=20.8;
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+The method format(String, Object...) in the type String is not applicable for the arguments ()
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ")" to complete MethodInvocation
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [28] 行发生了一个错误
+Syntax error, insert ")" to complete Expression
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н锛氣��+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token ";", , expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body bgcolor=#ffccff>	<!--html鑳屾櫙棰滆壊-->
+4: <p style="font-family:瀹嬩綋;font-size:36;color:blue">
+5: <%! double multi(double x;double y){
+6: 	return x*y;
+7: }
+8: double div(double x;double y){
+
+
+JSP文件：[/example2_3.jsp] 的第 [8] 行发生了一个错误
+Syntax error on token ";", , expected
+5: <%! double multi(double x;double y){
+6: 	return x*y;
+7: }
+8: double div(double x;double y){
+9: 	return x/y;
+10: }
+11: class Circle{
+
+
+JSP文件：[/example2_3.jsp] 的第 [10] 行发生了一个错误
+Syntax error on token "}", delete this token
+7: }
+8: double div(double x;double y){
+9: 	return x/y;
+10: }
+11: class Circle{
+12: 	double r;
+13: 	double getArea(){
+
+
+JSP文件：[/example2_3.jsp] 的第 [16] 行发生了一个错误
+Syntax error, insert "}" to complete MethodBody
+13: 	double getArea(){
+14: 		return 3.1415926*r*r;
+15: 	}
+16: }
+17: %>
+18: <% double x=8.79;
+19: double y=20.8;
+
+
+JSP文件：[/example2_3.jsp] 的第 [21] 行发生了一个错误
+The method multi() in the type example2_005f3_jsp is not applicable for the arguments (double, double)
+18: <% double x=8.79;
+19: double y=20.8;
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+The method format(String, Object...) in the type String is not applicable for the arguments ()
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ")" to complete MethodInvocation
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [28] 行发生了一个错误
+Syntax error, insert ")" to complete Expression
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н锛氣��+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 19:53:31.072 严重 [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+The method format(String, Object...) in the type String is not applicable for the arguments ()
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ")" to complete MethodInvocation
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [27] 行发生了一个错误
+Syntax error, insert ")" to complete Expression
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н锛氣��+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+The method format(String, Object...) in the type String is not applicable for the arguments ()
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ")" to complete MethodInvocation
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [23] 行发生了一个错误
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+20: out.print("璋冪敤mulit鏂规硶璁＄畻"+x+"涓�"+y+"鐨勫晢,<br>");
+21: out.print(multi(x,y));
+22: out.print("<br>璋冪敤div鏂规硶璁＄畻"+y+"闄や互"+x+"鐨勫晢,<br>");
+23: String s=String.format(鈥濆皬鏁扮偣淇濈暀3浣�:%10.3f",div(y,x));
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+
+
+JSP文件：[/example2_3.jsp] 的第 [27] 行发生了一个错误
+Syntax error, insert ")" to complete Expression
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н锛氣��+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 19:53:55.439 严重 [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [27] 行发生了一个错误
+String literal is not properly closed by a double-quote
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н锛氣��+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [27] 行发生了一个错误
+String literal is not properly closed by a double-quote
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н锛氣��+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 19:54:10.639 严重 [http-nio-8080-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [27] 行发生了一个错误
+The method gerArea() is undefined for the type example2_005f3_jsp.Circle
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н"+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_3.jsp] 的第 [27] 行发生了一个错误
+The method gerArea() is undefined for the type example2_005f3_jsp.Circle
+24: out.println(s);
+25: Circle circle=new Circle();
+26: circle.r=3.6;
+27: out.print("<br>鍗婂緞鏄�"+circle.r+"鐨勫渾闈㈢Н"+circle.gerArea());
+28: %>
+29: </p>
+30: </body></HTML>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 20:11:20.666 严重 [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常/example2_4.jsp (行.: [2], 列: [1]) [Page directive]有一个无效属性：[pageEnconding]
+	org.apache.jasper.JasperException: /example2_4.jsp (行.: [2], 列: [1]) [Page directive]有一个无效属性：[pageEnconding]
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.JspUtil.checkAttributes(JspUtil.java:207)
+		at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:112)
+		at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:582)
+		at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2387)
+		at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2439)
+		at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2445)
+		at org.apache.jasper.compiler.Node$Root.accept(Node.java:473)
+		at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2387)
+		at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1829)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 20:27:44.259 严重 [http-nio-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_5.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", invalid (
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body bgcolor=cyan>
+4: <% //Math.random()鏄痆0,1)涔嬮棿鐨勯殢鏈烘暟
+5: 	int number=7+锛坕nt)(Math.random()*13);
+6: 	if(number<=13){
+7: 		%>
+8: 		<center><h2>鏄剧ず灏忓鐢熷浘鐗�</h2><!--鎻掑叆鍏朵粬鏍囪-->
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_5.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", invalid (
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body bgcolor=cyan>
+4: <% //Math.random()鏄痆0,1)涔嬮棿鐨勯殢鏈烘暟
+5: 	int number=7+锛坕nt)(Math.random()*13);
+6: 	if(number<=13){
+7: 		%>
+8: 		<center><h2>鏄剧ず灏忓鐢熷浘鐗�</h2><!--鎻掑叆鍏朵粬鏍囪-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 20:29:21.350 严重 [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_5.jsp] 的第 [6] 行发生了一个错误
+Syntax error, insert ";" to complete Statement
+3: <HTML><body bgcolor=cyan>
+4: <% //Math.random()鏄痆0,1)涔嬮棿鐨勯殢鏈烘暟
+5: 	int number=7+(int)(Math.random()*13);
+6: 	out.print(number)
+7: 	if(number<=13){
+8: 		%>
+9: 		<center><h2>鏄剧ず灏忓鐢熷浘鐗�</h2><!--鎻掑叆鍏朵粬鏍囪-->
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_5.jsp] 的第 [6] 行发生了一个错误
+Syntax error, insert ";" to complete Statement
+3: <HTML><body bgcolor=cyan>
+4: <% //Math.random()鏄痆0,1)涔嬮棿鐨勯殢鏈烘暟
+5: 	int number=7+(int)(Math.random()*13);
+6: 	out.print(number)
+7: 	if(number<=13){
+8: 		%>
+9: 		<center><h2>鏄剧ず灏忓鐢熷浘鐗�</h2><!--鎻掑叆鍏朵粬鏍囪-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 22:07:30.584 严重 [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_9.jsp] 的第 [2] 行发生了一个错误
+The method getSerletInfo() is undefined for the type example2_005f9_jsp
+1: <%@ page info="娓呭崕澶у鍥惧儚tsunghua.jpg"%>
+2: <% String s=getSerletInfo();
+3: String str[]=s.split("鍥惧儚");
+4: %>
+5: <HTML><center>
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_9.jsp] 的第 [2] 行发生了一个错误
+The method getSerletInfo() is undefined for the type example2_005f9_jsp
+1: <%@ page info="娓呭崕澶у鍥惧儚tsunghua.jpg"%>
+2: <% String s=getSerletInfo();
+3: String str[]=s.split("鍥惧儚");
+4: %>
+5: <HTML><center>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 22:08:10.268 严重 [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_9.jsp] 的第 [2] 行发生了一个错误
+The method getSerletInfo() is undefined for the type example2_005f9_jsp
+1: <%@ page info="娓呭崕澶у鍥惧儚tsunghua.jpg"%>
+2: <% String s=getSerletInfo();
+3: String str[]=s.split("鍥惧儚");
+4: %>
+5: <HTML><center>
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_9.jsp] 的第 [2] 行发生了一个错误
+The method getSerletInfo() is undefined for the type example2_005f9_jsp
+1: <%@ page info="娓呭崕澶у鍥惧儚tsunghua.jpg"%>
+2: <% String s=getSerletInfo();
+3: String str[]=s.split("鍥惧儚");
+4: %>
+5: <HTML><center>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:46:09.010 严重 [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常/example2_12.jsp (行.: [9], 列: [0]) 结束标签&lt;/jsp:不对称
+	org.apache.jasper.JasperException: /example2_12.jsp (行.: [9], 列: [0]) 结束标签&lt;/jsp:不对称
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.checkUnbalancedEndTag(Parser.java:1594)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1470)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:206)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:46:39.720 严重 [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常/example2_12.jsp (行.: [10], 列: [0]) 结束标签&lt;/jsp:不对称
+	org.apache.jasper.JasperException: /example2_12.jsp (行.: [10], 列: [0]) 结束标签&lt;/jsp:不对称
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.checkUnbalancedEndTag(Parser.java:1594)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1470)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:206)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:46:58.533 严重 [http-nio-8080-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常/example2_12.jsp (行.: [10], 列: [0]) 结束标签&lt;/jsp:不对称
+	org.apache.jasper.JasperException: /example2_12.jsp (行.: [10], 列: [0]) 结束标签&lt;/jsp:不对称
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.checkUnbalancedEndTag(Parser.java:1594)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1470)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:206)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:46:59.718 严重 [http-nio-8080-exec-18] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.example2_005f12_jsp
+	java.lang.ClassNotFoundException: org.apache.jsp.example2_005f12_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:192)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:413)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:49:21.968 严重 [http-nio-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常/example2_12.jsp (行.: [15], 列: [0]) 结束标签&lt;/jsp:不对称
+	org.apache.jasper.JasperException: /example2_12.jsp (行.: [15], 列: [0]) 结束标签&lt;/jsp:不对称
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.checkUnbalancedEndTag(Parser.java:1594)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1470)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:206)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:50:05.648 严重 [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token ",", . expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math,random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", ; expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math,random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token ",", . expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math,random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", ; expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math,random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:50:29.748 严重 [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", ; expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math.random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", ; expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math.random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:50:36.479 严重 [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常无法为JSP编译类: 
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", ; expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math.random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+Stacktrace:
+	org.apache.jasper.JasperException: 无法为JSP编译类: 
+
+JSP文件：[/example2_12.jsp] 的第 [5] 行发生了一个错误
+Syntax error on token "Invalid Character", ; expected
+2: <%@ page pageEncoding="utf-8"%>
+3: <HTML><body>
+4: <h1>浜х敓涓�涓�1~10涔嬮棿鐨勯殢鏈烘暟
+5: <% double i=(int)(Math.random()*10)+1锛�
+6: if(i<=5){
+7: %>	
+8: <jsp:forward page="example2_12_a.jsp">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:498)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+09-Mar-2022 23:53:03.971 严重 [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke 在路径为/ch2的上下文中，Servlet[jsp]的Servlet.service（）引发了具有根本原因的异常/example2_12.jsp (行.: [11], 列: [0]) 结束标签&lt;/jsp:不对称
+	org.apache.jasper.JasperException: /example2_12.jsp (行.: [11], 列: [0]) 结束标签&lt;/jsp:不对称
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.checkUnbalancedEndTag(Parser.java:1594)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1470)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:206)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:777)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:355)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:866)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1716)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
